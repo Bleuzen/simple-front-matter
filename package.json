@@ -1,0 +1,17 @@
+{
+  "name": "simple-front-matter",
+  "version": "1.0.0",
+  "description": "Minimalistic front-matter",
+  "scripts": {
+    "build": "tsc && cp package.dist.json dist/package.json && cd dist/ && npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bleuzen/simple-front-matter"
+  },
+  "author": "Elias Martin <supgesu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  }
+}

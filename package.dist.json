@@ -1,0 +1,19 @@
+{
+  "name": "simple-front-matter",
+  "version": "1.0.0",
+  "description": "Minimalistic front-matter",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bleuzen/simple-front-matter"
+  },
+  "keywords": [
+    "front matter",
+    "minimalistic",
+    "lightweight",
+    "meta data"
+  ],
+  "author": "Elias Martin <supgesu@gmail.com>",
+  "license": "MIT"
+}
