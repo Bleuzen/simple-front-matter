@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Minimalistic front-matter",
   "scripts": {
-    "build": "tsc && cp package.dist.json dist/package.json && cd dist/ && npm pack"
+    "build": "tsc && cp package.dist.json dist/package.json && tail -n +2 README.md > dist/README.md"
   },
   "repository": {
     "type": "git",
