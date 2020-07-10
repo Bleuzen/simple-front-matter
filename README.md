@@ -1,5 +1,5 @@
 # simple-front-matter
-Minimalistic front-matter for JavaScript
+Minimalistic front-matter for JavaScript & TypeScript
 
 ## Install
 
