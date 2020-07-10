@@ -1,6 +1,52 @@
 # simple-front-matter
 Minimalistic front-matter for JavaScript
 
+## Install
+
+```bash
+npm install -S simple-front-matter
+```
+
+## Example
+
+If you have a file called `example.md`:
+
+```
+---
+title: Hello world
+description: Just an example post
+---
+
+This is the content of the post
+```
+
+Then you can do this:
+
+```javascript
+const matter = require('simple-front-matter')
+const fs = require('fs')
+
+fs.readFile('./example.md', 'utf8', (err, data) => {
+    if (err) throw err
+    const post = matter(data)
+    console.log(post)
+})
+```
+
+To get an object like this:
+
+```javascript
+{
+  attributes: {
+    title: 'Hello world',
+    description: 'Just an example post'
+  },
+  body: 'This is the content of the post',
+  bodyBegin: 6,
+  frontmatter: 'title: Hello world\ndescription: Just an example post'
+}
+```
+
 ## Why another front-matter library?
 
 While the other libraries depend on a big yaml parser, this one has no dependencies and is ultra lightweight.  
